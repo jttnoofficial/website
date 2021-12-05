@@ -31,6 +31,10 @@
   height:40px;
 }
 
+.buyCoffeeBox button:hover{
+  height:40px;
+}
+
 
 .findMedia i{
 margin:10px;
@@ -135,7 +139,7 @@ html,body,h1,h2,h3,h4,h5,h6{font-family: "Roboto", sans-serif}
       </div>
 
       <div class="w3-container w3-card w3-white">
-        <h2 class="w3-text-grey w3-padding-16"><i class="fas fa-user-graduate" style = "color:teal; margin-left:5px; margin-right:20px"></i>Education</h2>
+        <h2 class="w3-text-grey w3-padding-16"><i class="fas fa-user-graduate" style = "color:teal; margin-left:5px; margin-right:20px; font-size:35px"></i>Education</h2>
         <div class="w3-container">
           <h5 class="w3-opacity"><b>Life long learning > Google.com, W3School.com, StackOverFlow</b></h5>
           <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Forever</h6>
@@ -184,6 +188,10 @@ html,body,h1,h2,h3,h4,h5,h6{font-family: "Roboto", sans-serif}
 <script src ="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script>
 $(document).ready(function(){
+	var msg = new SpeechSynthesisUtterance();
+	msg.text = "Hello World";
+	window.speechSynthesis.speak(msg);
+
   $("#fbIcoBtn").click(function(){
       window.open("https://www.facebook.com/jhonder.tolentino.3");
   });
